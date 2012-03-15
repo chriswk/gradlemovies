@@ -1,0 +1,25 @@
+group=projectGroupId
+name: "Movies"
+
+allprojects {
+	apply plugin: 'java'
+	apply plugin: 'maven'
+	apply from: "${rootDir}/dependencies.gradle"
+	sourceCompatability=${javaVersion}
+	targetCompatability=${javaVersion}
+
+	version=${projectVersion}
+	group=${projectGroupId}
+	repositories {
+		mavenCentral()
+		mavenLocal()
+		mavenRepo urls: [
+			"https://repository.jboss.org/nexus/content/groups/public/",
+			"http://maven.springframework.org/snapshot"
+		]
+	}
+}
+
+task wrapper(type: Wrapper, description: "Configures the wrapper with ${gradleVersion}") {
+	gradleVersion = ${gradleVersion}
+}
