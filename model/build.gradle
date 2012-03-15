@@ -1,0 +1,15 @@
+dependencies {
+	compile ext.libs.spring.jdbc,
+			ext.libs.spring.orm,
+			ext.libs.commons.dbcp,
+			ext.libs.commons.pool,
+			ext.libs.hibernate.core,
+			ext.libs.hibernate.entitymanager,
+			ext.libs.hibernate.persistence,
+			ext.libs.hibernate.validator,
+			ext.libs.javax.jta
+	testCompile ext.libs.testing.junit,
+				ext.libs.testing.hamcrest.core,
+				ext.libs.testing.hamcrest.library,
+				ext.libs.testing.mockito.core
+}
