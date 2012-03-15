@@ -59,7 +59,7 @@ class Movie {
 	}
 
 	public String getTitle() {
-		return 
+		return title;
 	}
 
 	public void setTitle(String title) {
@@ -130,7 +130,7 @@ class Movie {
     }
     
     @Transactional
-    public Movie .merge() {
+    public Movie merge() {
         if (this.entityManager == null) this.entityManager = entityManager();
         Movie merged = this.entityManager.merge(this);
         this.entityManager.flush();

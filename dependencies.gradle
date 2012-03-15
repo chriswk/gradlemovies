@@ -1,5 +1,3 @@
-
-
 ext.libs = [
 	commons: [
 		dbcp: "commons-dbcp:commons-dbcp:$commonsDbcpVersion",
@@ -17,7 +15,8 @@ ext.libs = [
 		tx: "org.springframework:spring-tx:$springVersion",
 		aop: "org.springframework:spring-aop:$springVersion",
 		jdbc: "org.springframework:spring-jdbc:$springVersion",
-		orm:"org.springframework:spring-orm:$springVersion"
+		orm:"org.springframework:spring-orm:$springVersion",
+		test:"org.springframework:spring-test:$springVersion"
 	],
 	springsecurity: [
 		web: "org.springframework.security:spring-security-web:$springSecurityVersion",
@@ -28,7 +27,7 @@ ext.libs = [
 		entitymanager: "org.hibernate:hibernate-entitymanager:$hibernateVersion",
 		validator: "org.hibernate:hibernate-validator:$hibernateValidatorVersion",
 		jpamodelgen: "org.hibernate:hibernate-jpamodelgen:1.2.0.FINAL",
-		persistence: "org.hiberante.javax.persistence:hibernate-jpa-2.0-api:$hibernateJpaVersion"
+		persistence: "org.hibernate.javax.persistence:hibernate-jpa-2.0-api:$hibernateJpaVersion"
 	],
 	databases: [
 		h2: "com.h2database:h2:$h2Version",

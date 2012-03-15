@@ -7,8 +7,10 @@ dependencies {
 			ext.libs.hibernate.entitymanager,
 			ext.libs.hibernate.persistence,
 			ext.libs.hibernate.validator,
-			ext.libs.javax.jta
-	testCompile ext.libs.testing.junit,
+			ext.libs.javax.jta,
+			ext.libs.cglib
+	testCompile ext.libs.spring.test,
+				ext.libs.testing.junit,
 				ext.libs.testing.hamcrest.core,
 				ext.libs.testing.hamcrest.library,
 				ext.libs.testing.mockito.core

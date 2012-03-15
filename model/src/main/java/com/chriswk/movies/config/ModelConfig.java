@@ -56,12 +56,12 @@ public class ModelConfig {
 	@Bean
 	public LocalContainerEntityManagerFactoryBean entityManagerFactoryBean() {
 		final LocalContainerEntityManagerFactoryBean factoryBean = new LocalContainerEntityManagerFactoryBean();
-		factoryBean.setDataSource(dataSource())
+		factoryBean.setDataSource(dataSource());
 		factoryBean.setPackagesToScan(new String[]{"com.chriswk.movies.domain"});
 
 		final JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter() {
 			{
-				setDataBase(Database.H2);
+				//setDataBase(Database.H2);
 				setDatabasePlatform(hibernateDialect);
 				setShowSql(hibernateShowSql);
 				setGenerateDdl(jpaGenerateDdl);
@@ -100,6 +100,6 @@ public class ModelConfig {
 			{
 				setProperty("hibernate.hbm2ddl.auto", hibernateHbm2ddlAuto);
 			}
-		}
+		};
 	}
 }
