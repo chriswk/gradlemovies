@@ -14,6 +14,7 @@ ext.libs = [
 		oxm: "org.springframework:spring-oxm:$springVersion",
 		tx: "org.springframework:spring-tx:$springVersion",
 		aop: "org.springframework:spring-aop:$springVersion",
+		aspects: "org.springframework:spring-aspects:$springVersion",
 		jdbc: "org.springframework:spring-jdbc:$springVersion",
 		orm:"org.springframework:spring-orm:$springVersion",
 		test:"org.springframework:spring-test:$springVersion"

@@ -19,6 +19,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement
+@ImportResource("classpath:META-INF/spring/db-config.xml")
 @ComponentScan({"com.chriswk.movies.domain"})
 public class ModelConfig {
 
@@ -95,6 +96,7 @@ public class ModelConfig {
 		return new PersistenceExceptionTranslationPostProcessor();
 	}
 
+	public 
 	final Properties addtionalProperties() {
 		return new Properties() {
 			{

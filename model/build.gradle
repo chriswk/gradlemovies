@@ -1,6 +1,8 @@
 dependencies {
 	compile ext.libs.spring.jdbc,
 			ext.libs.spring.orm,
+			ext.libs.spring.aop,
+			ext.libs.spring.aspects,
 			ext.libs.commons.dbcp,
 			ext.libs.commons.pool,
 			ext.libs.hibernate.core,
@@ -8,7 +10,9 @@ dependencies {
 			ext.libs.hibernate.persistence,
 			ext.libs.hibernate.validator,
 			ext.libs.javax.jta,
-			ext.libs.cglib
+			ext.libs.javax.validation,
+			ext.libs.cglib,
+			ext.libs.databases.h2
 	testCompile ext.libs.spring.test,
 				ext.libs.testing.junit,
 				ext.libs.testing.hamcrest.core,
